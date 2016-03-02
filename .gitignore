@@ -1,0 +1,12 @@
+Library/
+Library_old/
+Build/
+*.csproj
+*.unityproj
+*.sln
+MindTrip.userprefs
+MindTrip.mp4
+Temp/UnityLockfile
+Temp/
+/*.png
+Builds/
