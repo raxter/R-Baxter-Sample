@@ -2,6 +2,10 @@ using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 
+/*
+Similar usage to the Vector2 class but integer based instead of float. Includes expected arithmetic operators for ease of use and hashing function.
+*/
+
 [System.Serializable]
 public struct IntVector2 : System.IComparable<IntVector2>
 {
@@ -128,17 +132,21 @@ public struct IntVector2 : System.IComparable<IntVector2>
 [System.Serializable]
 public struct IntVector3
 {
-	//	public IntVector2() : this (0,0)
-	//	{
-	//	}
-	public IntVector3(int x, int y, int z)
-	{
-		this.x = x;
-		this.y = y;
-		this.z = z;
-	}
-	
-	public int x;
+    public IntVector3(int x, int y)
+    {
+        this.x = x;
+        this.y = y;
+        this.z = 0;
+    }
+
+    public IntVector3(int x, int y, int z)
+    {
+        this.x = x;
+        this.y = y;
+        this.z = z;
+    }
+
+    public int x;
 	public int y;
 	public int z;
 	

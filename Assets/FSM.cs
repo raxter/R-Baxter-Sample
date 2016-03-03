@@ -8,6 +8,12 @@ public class Pair<T, S>
     public S Second;
 }
 
+/*
+A (slightly over-engineered) finite state machine with generic type as the states (usually I use an enum). 
+Has global or state specific callbacks for state changes as well as an Update callback that can be run each Update, 
+FixedUpdate frame, or even every few seconds and will call a specified update function of the state that it is in.
+*/
+
 public class FSM<T> where T : struct, System.IComparable
 {
 	Dictionary<T, StateData> _stateData;

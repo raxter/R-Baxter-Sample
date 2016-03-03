@@ -1,6 +1,10 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+/*
+Blends 3 different textures using an RGB splat texture to determine the blend weights.
+*/
+
 public class SplatShaderController : MonoBehaviour
 {
     [SerializeField]

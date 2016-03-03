@@ -5,6 +5,12 @@ using System.Collections.Generic;
 using System.Reflection;
 using SimpleJSON;
 
+
+/*
+Uses reflection to serialise data of a generic class instance into JSON data. Once serialized it can be deserialised back into an instance of that class. 
+It reads each property and recursively builds up JSON representations. Similarly for deserialization.
+*NOTE* the SimpleJSON library is external and I did not write this.
+*/
 public static class Serializer
 {
 	

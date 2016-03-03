@@ -2,6 +2,9 @@ using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 
+/*
+A set of Beizer curve/path calculation tools. The code in general use tool but was made for a particle system so that it would follow a predefined bezier path.
+*/
 
 public abstract class BeizerVertex
 {

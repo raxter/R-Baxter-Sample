@@ -10,7 +10,6 @@ public static class MiscUtil
         return new Rect(corners[0], corners[2] - corners[0]);
     }
 
-
     public static Bounds ForceToAspect(this Bounds b, float aspect, bool inner)
     {
         float frustumHeight;
